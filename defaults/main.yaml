@@ -12,5 +12,6 @@ install_iptables_legacy_packages:
     - "iptables"
   redhat_x86_64:
     - "alternatives"
+    - "arptables-legacy"
     - "ebtables"
     - "iptables"
