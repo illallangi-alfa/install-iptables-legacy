@@ -1,17 +1,14 @@
 ---
 install_iptables_legacy_packages:
-  debian_armv6l:
+  raspbian: &raspbian
     - "arptables"
     - "dpkg"
     - "ebtables"
     - "iptables"
-  debian_armv7l:
-    - "arptables"
-    - "dpkg"
-    - "ebtables"
-    - "iptables"
-  redhat_x86_64:
+  redhat: &redhat
     - "alternatives"
     - "arptables-legacy"
     - "ebtables"
     - "iptables"
+  debian_armv7l: *raspbian
+  redhat_x86_64: *redhat
